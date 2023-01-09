@@ -1,0 +1,21 @@
+pipeline
+{
+Slave1                                     
+stages
+{
+ stage ('commit')
+ {
+  steps
+   {
+    echo "Source code "
+   }
+  }
+  stage ('build')
+ {
+  steps
+   {
+    echo "Packaged code "
+   }
+  }
+}
+}
